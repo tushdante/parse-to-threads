@@ -60,7 +60,7 @@ app.post('/incoming', function(req, res){
           url: 'https://input.threads.io/v1/identify',
           method: 'POST',
           auth: {
-            'user': '2218b4fdc2b8b45dc4a7a525e302f9a3ea0e376f9bba4052',
+            'user': '',
             'pass': ''
           },
           body: JSON.stringify(identifyData)
@@ -87,7 +87,7 @@ app.post('/incoming', function(req, res){
             url: 'https://input.threads.io/v1/track',
             method: 'POST',
             auth: {
-              'user': '2218b4fdc2b8b45dc4a7a525e302f9a3ea0e376f9bba4052',
+              'user': '',
               'pass': ''
             },
             body: JSON.stringify(eventData)
