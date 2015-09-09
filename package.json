@@ -1,0 +1,22 @@
+{
+  "name": "sendgrid-2015-hack",
+  "version": "1.0.0",
+  "description": "Sendgrid hackathon project",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^1.4.2",
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "formidable": "^1.0.17",
+    "mimelib": "^0.2.19",
+    "request": "^2.60.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DevRel",
+  "license": "ISC"
+}
