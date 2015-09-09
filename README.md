@@ -1,4 +1,4 @@
-# parse-to-threads
+# Parse To Threads
 Automatically send the Parse Webhook data to Threads.io
 
 ### Installation
