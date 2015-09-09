@@ -7,6 +7,8 @@ Use `npm install` to install the required packages
 
 Start the server by running `node index.js`
 
+Threads also needs to be configured to have a verifed sending address, so this need to be done too
+
 ### Usage
 
 The server will accpet any incoming `POST` requests sent by the Parse webhook and will create a new user
