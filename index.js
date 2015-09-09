@@ -38,7 +38,7 @@ app.post('/incoming', function(req, res){
               return false
             };
           });    
-          console.log(propData);
+          
           callback(null, propData);
         });
       },
@@ -46,9 +46,9 @@ app.post('/incoming', function(req, res){
       //Make a request to threads to idenfiy the user
       function identifyUser(propData, callback){
         var addresses = mimelib.parseAddresses(propData.from);
-        console.log("from address", addresses[0].address);
+        
         var userId = createHash(addresses[0].address);
-        console.log("userId", userId);
+        
         var identifyData = {
           "userId": userId,
           "traits": {
@@ -56,9 +56,8 @@ app.post('/incoming', function(req, res){
             "email": addresses[0].address
           }
         };
-        console.log("identifyData", JSON.stringify(identifyData));
         request({
-          url: 'https://input.threads.io/v1/idenfiy',
+          url: 'https://input.threads.io/v1/identify',
           method: 'POST',
           auth: {
             'user': '2218b4fdc2b8b45dc4a7a525e302f9a3ea0e376f9bba4052',
