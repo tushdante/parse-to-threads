@@ -9,6 +9,9 @@ var express = require('express'),
   app = express();
 
 
+// Enter your api key here
+var API_KEY = '';
+
 //Set up the express server
 app.use(express.static(__dirname + '/views'));
 
@@ -60,7 +63,7 @@ app.post('/incoming', function(req, res){
           url: 'https://input.threads.io/v1/identify',
           method: 'POST',
           auth: {
-            'user': '',
+            'user': API_KEY,
             'pass': ''
           },
           body: JSON.stringify(identifyData)
@@ -87,7 +90,7 @@ app.post('/incoming', function(req, res){
             url: 'https://input.threads.io/v1/track',
             method: 'POST',
             auth: {
-              'user': '',
+              'user': API_KEY,
               'pass': ''
             },
             body: JSON.stringify(eventData)
